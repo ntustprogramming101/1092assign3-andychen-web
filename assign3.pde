@@ -207,7 +207,11 @@ void draw() {
     for(int i=10 ;  i< 10+ 70*playerHealth; i+=70){
      image(life, i,10); //iInit=10,80 //i= 150...<10+70*5(maxHeart) 
     }
-     
+    
+    if (playerHealth <1){
+     gameState=GAME_OVER;
+    }
+    
     break;
 
 		case GAME_OVER: // Gameover Screen
