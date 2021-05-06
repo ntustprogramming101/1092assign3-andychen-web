@@ -222,6 +222,13 @@ void draw() {
 			if(mousePressed){
 				gameState = GAME_RUN;
 				mousePressed = false;
+				
+			//init playerHealth
+			playerHealth = 2;
+			
+			//init groundhog
+			groundhogX = 80*4;
+			groundhogY = 80;	
 
 			}
 		}else{
